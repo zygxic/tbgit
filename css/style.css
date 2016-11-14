@@ -1,0 +1,143 @@
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("background.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+}
+
+.cleaner {
+	clear: both;
+}
+
+header {
+	width: 100%;
+	height: 8vh;
+	background-color: red;
+}
+
+.headerleft {
+	width: 45%;
+	height: 8vh;
+	float: left;
+	background-color: blue;
+}
+
+.headerleft img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.2vh;
+}
+
+.headerright {
+	width: 30%;
+	height: 8vh;
+	float: right;
+	background-color: green;
+}
+
+.userpanel {
+	width: 100%;
+	height: 8vh;
+	background-color: grey;
+}
+
+.userpanelleft{
+	width: 30%;
+	height: 8vh;
+	float: left;
+	background-color: blue;
+}
+
+.userpanelright {
+	width: 30%;
+	height: 8vh;
+	float: right;
+	background-color: green;
+}
+
+.shiftinfo {
+	width: 80vw;
+	height: 45vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: purple;
+	border-radius: 50%;
+	margin-top: 3vh;
+}
+
+.shiftdescription {
+	width: 80%;
+	height: 5vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black; 
+	margin-top: 3vh;
+}
+
+.calendar {
+	width: 85%;
+	height: 20vh;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: yellow;
+	margin-top: 3vh;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	background-color: black;
+	height: 8vh;
+	margin-top: 3vh;
+}
+
+.contactbutton {
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 70%;
+	height: 5vh;
+	background-color: orange;
+}
+
+.tblogocircle {
+	width: 80vw;
+	height: 45vh;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	margin-top: 3vh;
+}
+
+.fields input {
+	width: 85vw;
+	height: 15vw;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
