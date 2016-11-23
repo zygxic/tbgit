@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
 
 	<title>Tinderbox volunteer</title>
 	<link rel="stylesheet" type="text/css" href="style.css"
-	href = "<?php echo base_url(); ?> style.css">
+	href = "<?php echo base_url();?>css/style.css">
 
 
 
@@ -14,7 +16,12 @@
 <div class="container">
 	<header>
 		<div class="headerleft">
-			<img src="tblogo.png" alt="">
+
+<a href="<?php echo site_url('user/adminlogin'); ?>" title="Website name">
+	<img src="<?php echo base_url('img/tblogo.png'); ?>" alt="">
+</a>
+
+			
 		</div>
 
 		<div class="headerright">
@@ -40,18 +47,15 @@
 
 	<div class="swipenav">
 		<div class="swipenavbutton">
-
-			<a href="<?php echo site_url('user/adminlogin'); ?>">testing the link</a>
-
-
+			<a href="<?php echo site_url('user/adminlogin'); ?>">Admin page</a>
 		</div>
 
 		<div class="swipenavbutton">
-			<a href="#">Option 2</a>
+			<a href="<?php echo site_url('user/schedule');?>">Schedule</a>
 		</div>
 
 		<div class="swipenavbutton">
-			<a href="#">Option 3</a>
+			<a href="<?php echo site_url('user/schedule');?>">Schedule</a>
 		</div>
 	</div>
 
