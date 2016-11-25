@@ -258,12 +258,25 @@ class User extends CI_Controller{
 		$this->load->library('session');
 		//$this->session_not_set();
 		//when inside this method call the model with dB info
-		if( $this->session->userdata('logged_in') === true) {
+
+		$this->session_check();
+
+		// if( $this->session->userdata('logged_in') === true) {
+
             echo 'session value logged_in was set to true';
-            $this->load->view('schedule_view');
-        } else{
-        	echo 'session was not set';
-        }
+
+	    	$id = $this->session->userdata('id');
+	    	echo $id;
+
+            $this->load->model('users_model');
+            $schedulerow['data'] = $this->users_model->get_schedules($id);
+            
+            echo '<br> hello this is echo here';
+
+            $this->load->view('schedule_view',$schedulerow);
+       // } else{
+       // 	echo 'session was not set';
+       // }
 	}
 
 	public function index(){
@@ -271,21 +284,32 @@ class User extends CI_Controller{
 		$this->load->library('session');
 		//$this->session_not_set();
 		//when inside this method call the model with dB info
-		if( $this->session->userdata('logged_in') === true) {
+		//if( $this->session->userdata('logged_in') === true) {
+        	$this->session_check();
             echo 'session value logged_in was set to true';
             $this->load->view('index_view');
-        } else{
-        	echo 'session was not set';
-        }
+        //} else{
+        //	echo 'session was not set';
+        //}
 	}	
 
+	//public function schedule_user(){
+	//
+	//}
 
 
-
-public function login(){
-	$this->load->view('login_view');
+public function log_out(){
+	$this->load->library('session');
+	$this->session->set_userdata('logged_in', FALSE);
+    header('Location: /tinderboxCI/user/loginuser');
 }
 		
+
+public function form_check(){
+	echo 'Checking login form';
+
+}		
+
 public function loginuser(){
 
 	$this->load->helper('url');
@@ -303,7 +327,7 @@ public function loginuser(){
 
 
     if($userexsists === true){
-        //user details info for setting session
+        
         $this->load->library('session');
     	echo ' indeside the IF statement <br>';
     	echo ' value of logged_in is: ' . $this->session->userdata('logged_in');
@@ -313,17 +337,17 @@ public function loginuser(){
 			$this->load->view('index_view', $data);
     	}
     } else {                            
-        //$this->data['msg'] = "Wrong Username/Password";
+        
         $this->load->view('login_view');
     }
 }
 
 
 
-	public function session_not_set(){
-    	if ($this->session->userdata('logged_in') === false)
-    	{ 
-       	header('Location: /tinderboxCI/user/login');
+	public function session_check(){
+
+    	if ($this->session->userdata('logged_in') === false){ 
+       	header('Location: /tinderboxCI/user/loginuser');
    		}
 	}
 

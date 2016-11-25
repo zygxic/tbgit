@@ -50,11 +50,11 @@
 
 	<div class="schedulewrap">
 
-		<h1 class="headline">Headline goes here imported from database</h1>
+		<h1 class="headline"> <? echo $data['title'] ?>    </h1>
 
-		<div class="timespan">from 10 until 15</div>
+		<div class="timespan"> <? echo $data['timespan'] ?> </div>
 
-		<div class="taskdescription">what you will do  - data imported from databse</div>
+		<div class="taskdescription"> <? echo $data['content'] ?> </div>
 
 	</div>
 

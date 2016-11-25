@@ -17,9 +17,9 @@
 	<header>
 		<div class="headerleft">
 
-<a href="<?php echo site_url('user/adminlogin'); ?>" title="Website name">
-	<img src="<?php echo base_url('img/tblogo.png'); ?>" alt="">
-</a>
+	<a href="<?php echo site_url('user/adminlogin'); ?>" title="Website name">
+		<img src="<?php echo base_url('img/tblogo.png'); ?>" alt="">
+	</a>
 
 			
 		</div>
@@ -55,7 +55,7 @@
 		</div>
 
 		<div class="swipenavbutton">
-			<a href="<?php echo site_url('user/schedule');?>">Schedule</a>
+			<a href="<?php echo site_url('user/log_out');?>">Log out</a>
 		</div>
 	</div>
 

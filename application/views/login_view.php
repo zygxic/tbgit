@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Please login</title>\
+	<title>Please login</title>
 	<link rel="stylesheet" type="text/css"
 		href = "<?php echo base_url();?>css/style.css">
 
