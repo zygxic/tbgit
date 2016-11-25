@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>Please login</title>
-	<link rel="stylesheet" type="text/css" href = "<?php echo base_url();?>css/style.css">
-
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap.min.css">
+	<!--<script type='text/javascript' src="<?php // echo base_url(); ?>js/jquery.min.js"></script>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
