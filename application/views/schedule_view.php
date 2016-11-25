@@ -4,35 +4,37 @@
 <html>
 <head>
 	<title>Schedule</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href = "<?php echo base_url();?>css/style.css">
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid">
 	<header>
-		<div class="headerleft">
+		<div class="headerleft col-xs-4">
 			<img src="tblogo.png" alt="">
 		</div>
 
-		<div class="headerright">
-			<nav>
-				
-			</nav>
+			<div class="col-xs-4"></div>
+
+		<div class="headerright col-xs-4">
+			
+				<div class="wrapper">
+		<nav>
+			<a class="menu-nav"></a>
+			<ul class="open">
+				<li><a href="">qqqqq</a></li>
+				<li><a href="">wwwww</a></li>
+				<li><a href="">eeeee</a></li>
+				<li><a href="">rrrrr</a></li>
+				<li><a href="">ttttt</a></li>
+			</ul>
+		</nav>
+	</div>
+		
 		</div>
 	</header>
+
 					<div class="cleaner"></div>
-
-	<div class="userpanel">
-		<div class="userpanelleft">
-			
-		</div>
-
-		<div class="userpanelright">
-			
-		</div>
-	</div>
-	
-					 <div class="cleaner"></div>	
 
 	<div class="swipenav">
 		<div class="swipenavbutton">
@@ -58,11 +60,17 @@
 
 	</div>
 
-
-	<footer>
+	<footer class="col-xs-12">
 		<div class="contactbutton">
-			
+			<p class="contactsup">Contact supervisor</p>
 		</div>
 	</footer>
+	
+
+</div>
+
 </body>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="menu.js"></script>
 </html>

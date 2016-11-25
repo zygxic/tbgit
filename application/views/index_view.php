@@ -5,41 +5,51 @@
 <head>
 
 	<title>Tinderbox volunteer</title>
-	<link rel="stylesheet" type="text/css" href="style.css"
-	href = "<?php echo base_url();?>css/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href = "<?php echo base_url();?>css/style.css">
 
 
 
 </head>
 <body>
 
-<div class="container">
+<div class="container-fluid">
 	<header>
-		<div class="headerleft">
-
-	<a href="<?php echo site_url('user/adminlogin'); ?>" title="Website name">
+		<div class="headerleft col-xs-4">
+		<a href="<?php echo site_url('user/adminlogin'); ?>" title="Website name">
 		<img src="<?php echo base_url('img/tblogo.png'); ?>" alt="">
-	</a>
-
-			
+			<!--<img src="tblogo.png" alt="">-->
 		</div>
 
-		<div class="headerright">
-			<nav>
-				
-			</nav>
+			<div class="col-xs-4"></div>
+
+		<div class="headerright col-xs-4">
+			
+				<div class="wrapper">
+		<nav>
+			<a class="menu-nav"></a>
+			<ul class="open">
+				<li><a href="">qqqqq</a></li>
+				<li><a href="">wwwww</a></li>
+				<li><a href="">eeeee</a></li>
+				<li><a href="">rrrrr</a></li>
+				<li><a href="">ttttt</a></li>
+			</ul>
+		</nav>
+	</div>
+		
 		</div>
 	</header>
 
 					<div class="cleaner"></div>
 
 	<div class="userpanel">
-		<div class="userpanelleft">
-			
+		<div class="userpanelleft col-xs-4">
+			Put username here
 		</div>
+				<div class="col-xs-4"></div>
+		<div class="userpanelright col-xs-4">
 
-		<div class="userpanelright">
-			
 		</div>
 	</div>
 	
@@ -59,21 +69,21 @@
 		</div>
 	</div>
 
-	<div class="shiftinfo">
+	<div class="shiftinfo col-xs-12">
 
 	</div>
 
-	<div class="shiftdescription">
-			
+	<div class="shiftdescription col-xs-12">
+			<p class="shiftdescriptiontext">Brief description of your shift goes here</p>
 	</div>
 
-	<div class="calendar">
+	<div class="calendar col-xs-12">
 		
 	</div>
 
-	<footer>
+	<footer class="col-xs-12">
 		<div class="contactbutton">
-			
+			<p class="contactsup">Contact supervisor</p>
 		</div>
 	</footer>
 	
@@ -81,4 +91,7 @@
 </div>
 
 </body>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="menu.js"></script>
 </html>
