@@ -2,9 +2,13 @@
 
 class Users_model extends CI_Model{
 
-	var $userdetails;
-	var $rowarray;
 	/*
+	public function get_users(){
+		$query = $this->db->query('SELECT * FROM users');
+		return $query->result();
+	}
+
+
 	public function get_something($userlogin)
 	{
 		$query = sprintf('SELECT firstname,lastname,email, password 
@@ -14,22 +18,6 @@ class Users_model extends CI_Model{
 
 		$result = $this->db->query($query);
 		return $result->row();
-	} 
-	*/
-
-	/*public function get_schedules(){
-		$query = $this->db->query('SELECT * FROM schedule');
-		if($query->result() !== null){
-			echo 'its null';
-			return $query->result();
-		}
-		return $query->result();
-		
-	}*/
-
-	/*public function get_schedules(){
-		$query = $this->db->get('schedule');
-		return $query->result();
 	}*/
 
 
@@ -58,40 +46,12 @@ class Users_model extends CI_Model{
 			, $password);
 
 			$result = $this->db->query($query);
-			$rowarray = $result->row_array();
-			if($rowarray !== null && is_array($rowarray)){
-				echo 'This name was found in the database.. Wellcome user!: ';
-				$userdetails = $rowarray;
-				echo $userdetails['username'];
-				echo $userdetails['uid'];
-				echo $userdetails['lastname'];
-
-				//setting the session info
-				$this->setting_session($userdetails);
-
-				//user has been found in dB return true
+			if($result->row() !== null){
+				//echo 'This name was found in the database.. Wellcome user!: ' . $result->row()->$username;
 				return true;
 			}
-	}
 
-    public function setting_session($userdetails){
-    	    	$this->session->set_userdata( array(
-                'id'=> $userdetails['uid'],
-                'firstname'=> $userdetails['firstname'],
-                'lastname' => $userdetails['lastname'],
-                'username' => $userdetails['username'],
-                'password' => $userdetails['password'],
-                'logged_in' => TRUE
-            )
-        );
-    }
-
-
-
-
-
-
-
+		}
 
 	public function delete_note($id = null){
 
@@ -134,26 +94,9 @@ class Users_model extends CI_Model{
 				//echo 'This name was found in the database.. Wellcome user!: ' . $result->row()->$username;
 				return true;
 			}
-		}
-
-
-
-		//spcific users id
-		public function get_schedules($id){
-		$query = sprintf('SELECT * FROM schedule
-				WHERE userid = "%s"
-				LIMIT 1'
-			, $id);
-
-			$result = $this->db->query($query);
-			$rowarray = $result->row_array();
-
-			if($rowarray !== null && is_array($rowarray)){
-				echo 'is it not null';
-				return $rowarray;
-			}
 
 		}
+
 
 
 

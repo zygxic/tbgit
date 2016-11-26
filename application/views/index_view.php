@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +5,6 @@
 	<title>Tinderbox volunteer</title>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap.min.css">
-	<!--<script type='text/javascript' src="<?php // echo base_url(); ?>js/jquery.min.js"></script>-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
@@ -18,28 +14,15 @@
 <div class="container-fluid">
 	<header>
 		<div class="headerleft col-xs-4">
-		<a href="<?php echo site_url('user/adminlogin'); ?>" title="Website name">
-		<img src="<?php echo base_url('img/tblogo.png'); ?>" alt="">
-			<!--<img src="tblogo.png" alt="">-->
+			<img src="<?php echo base_url(); ?>css/img/tblogo.png" alt="">
 		</div>
 
 			<div class="col-xs-4"></div>
 
 		<div class="headerright col-xs-4">
-			
-				<div class="wrapper">
-		<nav>
-			<a class="menu-nav"></a>
-			<ul class="open">
-				<li><a href="">qqqqq</a></li>
-				<li><a href="">wwwww</a></li>
-				<li><a href="">eeeee</a></li>
-				<li><a href="">rrrrr</a></li>
-				<li><a href="">ttttt</a></li>
-			</ul>
-		</nav>
-	</div>
-		
+			<nav>
+				Please put your menu here Zygi
+			</nav>
 		</div>
 	</header>
 
@@ -47,11 +30,11 @@
 
 	<div class="userpanel">
 		<div class="userpanelleft col-xs-4">
-			Put username here
+			
 		</div>
 				<div class="col-xs-4"></div>
 		<div class="userpanelright col-xs-4">
-
+			Welcome dollarsign User
 		</div>
 	</div>
 	
@@ -59,15 +42,15 @@
 
 	<div class="swipenav">
 		<div class="swipenavbutton">
-			<a href="<?php echo site_url('user/adminlogin'); ?>">Admin page</a>
+			<a href="#">Option 1</a>
 		</div>
 
 		<div class="swipenavbutton">
-			<a href="<?php echo site_url('user/schedule');?>">Schedule</a>
+			<a href="#">Option 2</a>
 		</div>
 
 		<div class="swipenavbutton">
-			<a href="<?php echo site_url('user/log_out');?>">Log out</a>
+			<a href="#">Option 3</a>
 		</div>
 	</div>
 
@@ -76,7 +59,7 @@
 	</div>
 
 	<div class="shiftdescription col-xs-12">
-			<p class="shiftdescriptiontext">Brief description of your shift goes here</p>
+		Brief description about where you will be working and what you will do.
 	</div>
 
 	<div class="calendar col-xs-12">
@@ -88,12 +71,7 @@
 			<p class="contactsup">Contact supervisor</p>
 		</div>
 	</footer>
-	
-
-</div>
+			<a href="<?php echo site_url('user/adminlogin'); ?>">testing the link</a>
 
 </body>
-
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="menu.js"></script>
 </html>
