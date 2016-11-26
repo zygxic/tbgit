@@ -1,79 +1,80 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Schedule</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/bootstrap.min.css">
-	<!--<script type='text/javascript' src="<?php // echo base_url(); ?>js/jquery.min.js"></script>-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tinderbox volunteer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
+
 <body>
 
-<div class="container-fluid">
-	<header>
-		<div class="headerleft col-xs-4">
-			<img src="tblogo.png" alt="">
-		</div>
+	<div class="container">
+		<header>
+			<div class="headerleft">
+				<a href="index.html" class="logoa">
+					<img src="tinderbox3.png" alt="logo" class="logoimg">
+				</a>
+			</div>
 
-			<div class="col-xs-4"></div>
 
-		<div class="headerright col-xs-4">
-			
-				<div class="wrapper">
+
+			<div class="headerright">
+			<h1 class="nameheader">
+				Irvin Kubat 
+				<img src="notificationimg.png" alt="notification" class="notificationimg">
+			</h1>
+			</div>
+
+		</header>
+				<div class="cleaner">
+				</div>
 		<nav>
-			<a class="menu-nav"></a>
-			<ul class="open">
-				<li><a href="">qqqqq</a></li>
-				<li><a href="">wwwww</a></li>
-				<li><a href="">eeeee</a></li>
-				<li><a href="">rrrrr</a></li>
-				<li><a href="">ttttt</a></li>
-			</ul>
+		<ul class="menuul">
+			<li class="menuli menuli1"> <a href="news"> News     </a> </li>
+			<li class="menuli menuli2"> <a href="schedule"> Schedule </a> </li>
+			<li class="menuli menuli3"> <a href="#"> Groups   </a> </li>
+		</ul>
 		</nav>
-	</div>
-		
+
+		<div class="schedule">
+			<div class="todo1">
+				<p> <b> 8:00 - 8:45: </b> </p>
+				<p> <b> Location: </b> Work booth </p>
+				<p> <b> Introduction: </b> There will be an introduction at the work booth </p>
+			</div> 
+			<div class="todo2">
+				<p> <b> 8:45 - 10:30: </b> </p>
+				<p> <b> Location: </b> Work booth </p>
+				<p> <b> Setting up: </b> We need to set everything up and ready </p>
+			</div>
+			<div class="todo1">
+				<p> <b> 10:30 - 11:00: </b> </p>
+				<p> <b> Location: </b> Inside the big tent </p>
+				<p> <b> Cleaning some area: </b> We need to clean the food tent </p>
+			</div>
+			<div class="todo2">
+				<p> <b> 11:00 - 12:30: </b> </p>
+				<p> <b> Location: </b> At gate 1 </p>
+				<p> <b> Garding: </b> We need to gard the different entrences for trespassers </p>
+			</div>
+			<div class="todo1">
+				<p> <b> 12:30 - 13:30: </b> </p>
+				<p> <b> Location: </b> At lunch tent </p>
+				<p> <b> Lunch: </b>  There will be food and soda for you starving people </p>
+			</div>
+			<div class="todo2">
+				<p> <b> 13:30 - 16:00: </b>  </p>
+				<p> <b> Location: </b>  At gate 5 </p>
+ 				<p> <b> Garding: </b>  We need to gard the different entrences for trespassers </p>
+			</div>		
 		</div>
-	</header>
 
-					<div class="cleaner"></div>
+		<footer>
+			<button class="footerbutton">Message to supervisor</button>	
+		</footer>
 
-	<div class="swipenav">
-		<div class="swipenavbutton">
-			<a href="#">Option 1</a>
-		</div>
 
-		<div class="swipenavbutton">
-			<a href="<?php echo site_url('user/index');?>">Index</a>
-		</div>
 
-		<div class="swipenavbutton">
-			<a href="#">Option 3</a>
-		</div>
-	</div>
 
-	<div class="schedulewrap">
-
-		<h1 class="headline"> <? echo $data['title'] ?>    </h1>
-
-		<div class="timespan"> <? echo $data['timespan'] ?> </div>
-
-		<div class="taskdescription"> <? echo $data['content'] ?> </div>
-
-	</div>
-
-	<footer class="col-xs-12">
-		<div class="contactbutton">
-			<p class="contactsup">Contact supervisor</p>
-		</div>
-	</footer>
-	
-
-</div>
 
 </body>
-
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="menu.js"></script>
-</html>
