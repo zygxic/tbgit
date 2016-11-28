@@ -4,33 +4,6 @@ class Users_model extends CI_Model{
 
 	var $userdetails;
 	var $rowarray;
-	/*
-	public function get_something($userlogin)
-	{
-		$query = sprintf('SELECT firstname,lastname,email, password 
-				FROM users 
-				WHERE name = "%s" '
-				, $userlogin);
-
-		$result = $this->db->query($query);
-		return $result->row();
-	} 
-	*/
-
-	/*public function get_schedules(){
-		$query = $this->db->query('SELECT * FROM schedule');
-		if($query->result() !== null){
-			echo 'its null';
-			return $query->result();
-		}
-		return $query->result();
-		
-	}*/
-
-	/*public function get_schedules(){
-		$query = $this->db->get('schedule');
-		return $query->result();
-	}*/
 
 
 	public function set_user($userdata){
@@ -141,17 +114,32 @@ class Users_model extends CI_Model{
 		//spcific users id
 		public function get_schedules($id){
 		$query = sprintf('SELECT * FROM schedule
-				WHERE userid = "%s"
-				LIMIT 1'
+				WHERE userid = "%s"'
 			, $id);
 
 			$result = $this->db->query($query);
-			$rowarray = $result->row_array();
+			$rowarray = $result->result();
 
-			if($rowarray !== null && is_array($rowarray)){
-				echo 'is it not null';
+			//if($rowarray !== null && is_array($rowarray)){
+			//	echo 'is it not null';
 				return $rowarray;
-			}
+			//}
+
+		}
+
+		public function get_news(){
+		$query = sprintf('SELECT * FROM news
+				');
+
+			$result = $this->db->query($query);
+			$rowarray = $result->result();
+
+			return $rowarray;
+
+			//if($rowarray !== null && is_array($rowarray)){
+			//	echo 'is it not null';
+			//	return $rowarray;
+			//}
 
 		}
 

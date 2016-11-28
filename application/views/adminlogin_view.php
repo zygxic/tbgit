@@ -17,6 +17,7 @@
 <form action="">
 <input type="text" name="username" placeholder="Your username"> <br>
 <input type="password" name="password" placeholder="Your password"> <br>
+<input type="uid" name="uid" placeholder="Your id"> <br>
 <input type="submit">
 </form>
 </div>

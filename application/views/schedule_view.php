@@ -51,15 +51,25 @@
 		<div class="swipenavbutton">
 			<a href="#">Option 3</a>
 		</div>
-	</div>
+	</div>      
 
 	<div class="schedulewrap">
 
-		<h1 class="headline"> <? echo $data['title'] ?>    </h1>
+		<h1 class="headline">  </h1>
 
-		<div class="timespan"> <? echo $data['timespan'] ?> </div>
+		<div class="timespan"> </div>
 
-		<div class="taskdescription"> <? echo $data['content'] ?> </div>
+		<div class="taskdescription">  </div>
+		
+		<?php foreach($data as $row){?>
+			<table>
+   				<tr>
+    			<td> <br> <?php echo $row->title;?></td>
+    			<td> <br> <?php echo $row->content;?></td>
+   				<td> <br> <?php echo $row->timespan;?></td>
+  				</tr>
+  			</table>
+ 		 <?php }?>
 
 	</div>
 

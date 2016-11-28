@@ -47,7 +47,7 @@
 
 	<div class="userpanel">
 		<div class="userpanelleft col-xs-4">
-			Put username here
+			<?php print_r($this->session->userdata('username')); ?>
 		</div>
 				<div class="col-xs-4"></div>
 		<div class="userpanelright col-xs-4">
@@ -59,7 +59,7 @@
 
 	<div class="swipenav">
 		<div class="swipenavbutton">
-			<a href="<?php echo site_url('user/adminlogin'); ?>">Admin page</a>
+			<a href="<?php echo site_url('user/news'); ?>">News</a>
 		</div>
 
 		<div class="swipenavbutton">
@@ -76,7 +76,7 @@
 	</div>
 
 	<div class="shiftdescription col-xs-12">
-			<p class="shiftdescriptiontext">Brief description of your shift goes here</p>
+			<p class="shiftdescriptiontext">No urgent messages recieved</p>
 	</div>
 
 	<div class="calendar col-xs-12">
@@ -85,7 +85,7 @@
 
 	<footer class="col-xs-12">
 		<div class="contactbutton">
-			<p class="contactsup">Contact supervisor</p>
+			<p class="contactsup" > <a href=""> Contact supervisor</p>
 		</div>
 	</footer>
 	
